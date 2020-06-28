@@ -25,7 +25,8 @@ module.exports = {
             // ]),
         ]
     },
-    // plugins: [
+    plugins: [
+        // {src: '~/plugins/carousel', mode: 'client'},
         // {src: '~/plugins/i18n', mode: 'client'},
         // '~/plugins/axios',
         // {src: '~/plugins/laravel-echo', mode: 'client'},
@@ -40,7 +41,7 @@ module.exports = {
         // {src: '~/plugins/sharing', mode: 'client'},
         // {src: '~/plugins/methods', mode: 'client'},
         // {src: '~/assets/js/app', mode: 'client'},
-    // ],
+    ],
     // buildModules: [
         // '@nuxtjs/moment'
     // ],

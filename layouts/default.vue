@@ -1,5 +1,5 @@
 <template>
-    <div id="distance-between-elements">
+    <div id="content">
         <!--<TheNav />-->
         <TheHeader/>
         <nuxt/>

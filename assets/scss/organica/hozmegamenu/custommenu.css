@@ -1,0 +1,371 @@
+.pt_custommenu {
+    font-size: 14px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 90;
+    display: inline-block;
+	float:none;
+}
+.pt_custommenu div.pt_menu {
+    float: left;
+}
+.pt_custommenu div.pt_menu  .parentMenu {
+	position:relative;
+	bottom:-2px;
+	z-index:1;
+}
+.pt_custommenu div.pt_menu .parentMenu a,
+.pt_custommenu div.pt_menu .parentMenu span.block-title{
+	color: #4c4c4c;
+    display: block;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 5px 15px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+	z-index:1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.nav-container.fix-nav .pt_custommenu div.pt_menu .parentMenu a, 
+.nav-container.fix-nav.pt_custommenu div.pt_menu .parentMenu span.block-title{}
+.nav-container.fix-nav .pt_custommenu div.pt_menu .parentMenu a:hover, 
+.nav-container.fix-nav .pt_custommenu div.pt_menu.act .parentMenu a:hover, 
+.nav-container.fix-nav.pt_custommenu div.pt_menu .parentMenu span.block-title:hover {}
+div#pt_menu_home .parentMenu a{
+    padding-left: 0px
+}
+.pt_custommenu div.pt_menu.act .parentMenu a,.pt_custommenu div.pt_menu .parentMenu a:hover{
+    color: #98ab3f;
+}
+div.pt_menu .parentMenu a, .parentMenu .block-title {
+    color: #4c4c4c;
+    font-size: 18px;
+}
+.pt_custommenu div.popup {
+    position:absolute;
+    z-index:3000;
+    background-color:#fff;
+    text-align:left;
+    padding:15px;
+    margin: 0;
+    top: 42px !important;
+    left: 0px !important;
+    -moz-box-shadow: 1px 5px 20px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 1px 5px 20px rgba(0,0,0,0.2);
+    box-shadow: 1px 5px 20px rgba(0,0,0,0.2);
+}
+
+.pt_custommenu div.popup a {
+    text-decoration: none;
+    display:block;
+    line-height: 32px;
+}
+
+.pt_custommenu .itemMenu h4.level0,.pt_custommenu .itemMenu a.level0 {
+    color: #444444;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.pt_custommenu div.pt_menu.act .itemMenu .itemMenuName{ color: #4c4c4c; background:none; }
+
+.pt_custommenu div.pt_menu.act .itemSubMenu .itemMenuName{ color: #7a7a7a;}
+
+
+.pt_custommenu .itemSubMenu h4.level2,
+.pt_custommenu .itemSubMenu a.level2,
+.pt_custommenu .itemSubMenu h4.level3,
+.pt_custommenu .itemSubMenu a.level3,
+.pt_custommenu .itemMenu .level1 a.level0{
+    color: #4c4c4c;
+    font-size: 13px;
+    font-weight: normal;
+    padding-left: 10px;
+    text-transform: none;
+	line-height:30px;
+}
+.pt_custommenu .itemSubMenu h4.level2:hover,
+.pt_custommenu .itemSubMenu a.level2:hover,
+.pt_custommenu .itemSubMenu h4.level3:hover,
+.pt_custommenu .itemSubMenu a.level3:hover,
+.pt_custommenu .itemMenu .level1 a.level0:hover{
+    color: #98ab3f;
+}
+.pt_custommenu div.popup a.actParent {
+    color: #444444;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.pt_custommenu div.popup a.act {
+    color: #444444;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.pt_custommenu div.column {
+    float: left;
+    margin-right: 5px;
+    padding-right: 5px;
+    width: 200px;
+}
+.pt_custommenu div.blockright {
+	width:500px;
+}
+.pt_custommenu div.popup .blockright img {
+    max-width: 100%;
+}
+.pt_custommenu div.column.last {
+    border-right: 0 none;
+}
+
+.pt_custommenu .block2{
+    margin-top: 10px;
+    float: left;
+}
+#block2_pt_item_menu_custom_menu {
+    width: 700px;
+	padding:0;
+}
+.static-menu-img {
+    margin: 0 20px 0 0;
+	width:40%;
+	float:left;
+}
+.pt_custommenu div.popup .block1{
+    overflow: hidden;
+    float: left;
+}
+
+#block2_pt_item_menu_custom_menu .content-custom {
+	font-size:14px;
+	color:#444444;
+	font-weight:normal;
+	line-height:20px;
+	margin:10px 0 0;
+	float:left;
+	width:50%;
+}
+.pt_custommenu div.popup .block1 .column{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+.pt_custommenu div.popup .blockright img{
+    max-width: 100%;
+} 
+
+.pt_custommenu div.pt_menu .parentMenu p{
+    margin: 0;
+    padding: 0;
+}
+.pt_custommenu #pt_menu_link{
+    padding: 0;
+}
+.pt_custommenu #pt_menu_link .parentMenu ul li{
+    float: left;
+    list-style: none;
+}
+.pt_custommenu #pt_menu_link .parentMenu ul li a{
+    float: left;
+    padding: 0 10px;
+    display: block;
+}
+.pt_custommenu .clearBoth {
+    clear:both;
+}
+.pt_menu_has_child{
+    position: relative;
+}
+.pt_menu_has_child:before{
+    content: "\f078";
+    font-family: "FontAwesome";
+    color: #343434;
+    right: 3px;
+    top: 12px;
+    position: absolute;
+    font-size: 8px;
+}
+/*mobile menu*/
+
+/*------Accordion ---------*/
+/********** < Navigation */
+.nav-collapse {
+    text-align: left;
+}
+.navbar .nav > li {
+    padding: 10px 30px 20px 0;
+}
+#ma-mobilemenu {
+    float: left;
+    height: auto;
+    margin:0;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    z-index: 99;
+}
+.nav-collapse, .nav-collapse.collapse {
+}
+.navbar-inner {
+    border: 0;
+    border-radius: 0;
+    padding: 0px 0;
+}
+.navbar .btn-navbar {
+    background: #343434 url("../../../image/bg-menu-mobile.png") no-repeat scroll 16px 17px;
+    border: 0 none !important;
+    box-shadow: none !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    display: block !important;
+    height: 50px; 
+    width: 50px;
+}
+.mobilemenu>li.last a {
+    border-bottom: 0;
+}
+.navbar .brand {
+    color: #343434;
+    text-transform: uppercase;
+    padding: 0px;
+    line-height: 50px;
+    float: left;
+    display: inline-block;
+}
+.mobilemenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.collapse.in {}
+.mobilemenu ul {
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+}
+.mobilemenu li {
+    background: #faf8f8;
+    cursor: pointer;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    position: relative;
+        border-radius: 0 !important;
+}
+.mobilemenu li.level0.last {
+    margin-bottom: 20px;
+}
+.mobilemenu li.active>a {
+    /*background: url('../images/close.gif') no-repeat center right;*/
+}
+.mobilemenu li div {
+    padding: 20px;
+    background: #aef;
+    display: block;
+    clear: both;
+    float: left;
+    width: 360px;
+}
+.mobilemenu a {
+    border-bottom: 1px solid #e0d8d8;
+    color: #666;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 40px;
+    margin: 0 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.mobilemenu ul ul a, .mobilemenu ul li.active ul a {
+    color: #666 !important;
+}
+
+
+.mobilemenu ul ul ul a, .mobilemenu ul ul li.active ul a {
+    color: #666 !important;
+}
+
+.mobilemenu ul ul ul ul a, .mobilemenu ul ul ul li.active ul a {
+    color: #666 !important;
+}
+
+.mobilemenu li.active>ul {
+
+}
+.mobilemenu ul ul a {
+    padding-left: 15px;
+}
+.mobilemenu ul ul ul a {
+    padding-left: 30px;
+}
+.mobilemenu ul ul ul ul a {
+    padding-left: 45px;
+}
+.mobilemenu ul ul ul ul ul a {
+    padding-left: 60px;
+}
+/*----------- button mobilemenu -------------*/
+.mobilemenu span.ttclose,.mobilemenu span.ttopen {
+    position: absolute;
+    top: 11px;
+    right: 8px;
+}
+.mobilemenu span.ttclose a { 
+    background: url("../../../image/menu_down.png") no-repeat scroll 50% 50%;
+     border: 0 none;
+    color: #333333;
+    display: block;
+    height: 15px;
+    padding: 0;
+    width: 15px;
+}
+.mobilemenu span.ttopen a { 
+    background: url("../../../image/menu_up.png") no-repeat scroll 50% 50%;
+     border: 0 none;
+    color: #333333;
+    display: block;
+    height: 15px;
+    padding: 0;
+    width: 15px;
+}
+.mobilemenu span.no-close a,.mobilemenu ul li ul span.ttclose a { background:none; }
+.mobilemenu span.up a { 
+    background: url("../../../image/menu_up.png") no-repeat scroll 50% 50%;
+}
+/*.mobilemenu span.head a:hover*/
+.mobilemenu li.active>span.ttclose a {
+    background: url(../../../image/menu_up.png) no-repeat 50% 50%;
+}
+.mobilemenu li.selected span.ttclose a {
+    background: url(../../../image/menu_up.png) no-repeat 50% 50%;
+}
+.menu-mobile {
+    display: inline-block;
+    float: left;
+    height: 50px;
+    padding: 0px;
+    background: #fff !important;
+    line-height: 50px;
+    width:100%;
+    text-align: center;
+}
+.img-hozmegamenu img{    
+    width: 100%;
+    max-width: 880px;
+}
+@media (max-width: 991px){
+    .ma-nav-mobile-container .navbar {    margin-bottom: 0px;}
+}
+@media (max-width: 991px) and (min-width: 768px){
+    .menu-mobile{margin-top: 4px;}
+}
+@media (max-width: 767px){
+    .level2 .button-view2 a{padding-left: 15px;}
+    .mobilemenu ul ul a{padding-left: 30px;}
+}

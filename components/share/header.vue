@@ -200,39 +200,6 @@
                         </div>
                     </div>
                 </div>
-                <script type="text/javascript">
-                    //<![CDATA[
-                    var body_class = $('body').attr('class');
-                    if (body_class == 'common-home') {
-                        $('#pt_menu_home').addClass('act');
-                    }
-
-                    var CUSTOMMENU_POPUP_EFFECT = 0;
-                    var CUSTOMMENU_POPUP_TOP_OFFSET = 42
-
-                    //]]>
-                </script>
-
-                <script type="text/javascript">
-                    $(function () {
-                        $(window).scroll(function () {
-                            if ($(this).scrollTop() > 250) {
-                                $('.nav-container').addClass("fix-nav");
-                            } else {
-                                $('.nav-container').removeClass("fix-nav");
-                            }
-                        });
-                    });
-                    $(function () {
-                        $(window).scroll(function () {
-                            if ($(this).scrollTop() > 250) {
-                                $('.quick-access').addClass("fix-header");
-                            } else {
-                                $('.quick-access').removeClass("fix-header");
-                            }
-                        });
-                    });
-                </script>
             </div>
         </div>
     </header>

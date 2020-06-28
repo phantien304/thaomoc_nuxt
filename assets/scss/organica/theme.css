@@ -655,7 +655,7 @@ nav .content-left .secon-block {
         margin-top: 10px;
         z-index: 9997;
     }
-    /*.quick-access.fix-header #cart-total span.icon_bag_alt{    background: url(../image/icon-cart.png)no-repeat 0px 5px}*/
+    /*.quick-access.fix-header #cart-total span.icon_bag_alt{    background: url(/image/icon-cart.png)no-repeat 0px 5px}*/
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
