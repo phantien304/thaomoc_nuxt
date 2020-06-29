@@ -27,6 +27,7 @@ module.exports = {
     },
     plugins: [
         // {src: '~/plugins/carousel', mode: 'client'},
+        {src: '~/plugins/elementUI', mode: 'client'},
         // {src: '~/plugins/i18n', mode: 'client'},
         // '~/plugins/axios',
         // {src: '~/plugins/laravel-echo', mode: 'client'},

@@ -2,8 +2,7 @@
   {
     "name": "index",
     "path": "/",
-    "component": "E:\\\\xampp\\\\htdocs\\\\thaomoc_nuxt\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_626af889"
+    "component": "C:\\\\xampp\\\\htdocs\\\\thaomoc_nuxt\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
   }
 ]
