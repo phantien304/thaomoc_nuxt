@@ -3,7 +3,7 @@
         <div class="ocfeaturedproduct-title module-title">
             <h3>Featured products</h3>
         </div>
-        <div class="featured-product-slider row">
+        <div class="featured-product-slider row mr-0">
             <div class="row_items col">
                 <div class="item">
                     <div class="item-inner">

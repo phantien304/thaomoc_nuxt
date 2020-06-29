@@ -12,6 +12,8 @@ module.exports = {
     },
     css: [
         '@/assets/scss/styles.scss',
+        'element-ui/lib/theme-chalk/icon.css',
+        'element-ui/lib/theme-chalk/index.css'
     ],
     build: {
         extractCSS: true,
@@ -26,8 +28,8 @@ module.exports = {
         ]
     },
     plugins: [
-        // {src: '~/plugins/carousel', mode: 'client'},
-        {src: '~/plugins/elementUI', mode: 'client'},
+        {src: '~/plugins/carousel', mode: 'client'},
+        {src: '~/plugins/element-ui'},
         // {src: '~/plugins/i18n', mode: 'client'},
         // '~/plugins/axios',
         // {src: '~/plugins/laravel-echo', mode: 'client'},
