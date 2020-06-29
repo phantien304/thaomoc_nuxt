@@ -370,7 +370,7 @@ nav .content-left .secon-block {
 }
 
 .content-right .btn-group button {
-    background: #98ab3f url(/image/top_cart.png) no-repeat 20px center;
+    background: #98ab3f url(~assets/image/top_cart.png) no-repeat 20px center;
     text-shadow: none;
     border: 0;
     border-radius: 40px;

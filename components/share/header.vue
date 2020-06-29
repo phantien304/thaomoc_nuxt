@@ -63,23 +63,23 @@
                                               method="post" enctype="multipart/form-data" id="form-language">
                                             <div class="btn-group">
                                                 <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                                                    <img src="catalog/language/en-gb/en-gb.png" alt="EN " title="EN ">
+                                                    <img src="~assets/image/en-gb.png" alt="EN " title="EN ">
                                                     <span class="">EN </span>
                                                 </button>
                                                 <ul class="dropdown-menu">
                                                     <li>
                                                         <button class="btn btn-link btn-block language-select"
                                                                 type="button" name="en-gb">
-                                                            <!-- <img src="catalog/language/en-gb/en-gb.png" alt="EN " title="EN " /> -->
-                                                            <img src="catalog/language/en-gb/en-gb.png" alt="EN "
+                                                            <!-- <img src="~assets/image/en-gb.png" alt="EN " title="EN " /> -->
+                                                            <img src="~assets/image/en-gb.png" alt="EN "
                                                                  title="EN ">EN
                                                         </button>
                                                     </li>
                                                     <li>
                                                         <button class="btn btn-link btn-block language-select"
                                                                 type="button" name="fr">
-                                                            <!-- <img src="catalog/language/fr/fr.png" alt="FR " title="FR " /> -->
-                                                            <img src="catalog/language/fr/fr.png" alt="FR " title="FR ">FR
+                                                            <!-- <img src="~assets/image/fr.png" alt="FR " title="FR " /> -->
+                                                            <img src="~assets/image/fr.png" alt="FR " title="FR ">FR
                                                         </button>
                                                     </li>
                                                 </ul>
