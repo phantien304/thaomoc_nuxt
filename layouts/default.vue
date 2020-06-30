@@ -1,19 +1,17 @@
 <template>
-    <div id="content">
-        <!--<TheNav />-->
+    <div class="common-home">
         <TheHeader/>
-        <nuxt/>
-        <!--<TheFooter />-->
+        <div id="content">
+            <nuxt/>
+        </div>
+        <TheFooter/>
     </div>
 </template>
 <script>
-    // import { getUserInfor } from '~/plugins/information';
-
     export default {
         components: {
-            // TheNav: () => import("~/components/share/TheNav"),
-            // TheFooter: () => import('~/components/share/TheFooter'),
             TheHeader: () => import('~/components/share/header'),
+            TheFooter: () => import('~/components/share/footer'),
         },
         mounted() {
         },

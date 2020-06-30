@@ -124,7 +124,7 @@
                 </div>
             </div>
             <div class="secon-block quick-access">
-                <div class="ma-nav-mobile-container visible-xs">
+                <div class="ma-nav-mobile-container d-block d-sm-none">
                     <div class="hozmenu">
                         <div class="navbar">
                             <div id="navbar-inner" class="navbar-inner navbar-inactive">
