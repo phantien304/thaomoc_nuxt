@@ -5,6 +5,7 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "bootstrap-vue": "^2.15.0",
     "cookie-parser": "^1.4.5",
     "copy-webpack-plugin": "^6.0.2",
     "element-ui": "^2.13.2",
@@ -17,6 +18,7 @@
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "tinymce": "^5.3.2",
+    "vue-carousel": "^0.18.0",
     "vue-loader": "^15.9.3",
     "vue-meta": "^2.4.0",
     "vue-owl-carousel": "https://github.com/phantien304/vue-owl-carousel"

@@ -2034,11 +2034,10 @@ nav .content-left .secon-block {
 
 #blog_home .articles-inner .articles-content {
     display: inline-block;
-    width: 76%;
+    width: 75%;
     margin-left: 30px;
     position: relative;
     text-align: left;
-    /*blog-home3*/
 }
 
 #blog_home .articles-inner .articles-content .articles-action {
@@ -3573,15 +3572,36 @@ button:hover .line-tooltips {
     display: inline-block;
 }
 
-.owl-carousel .owl-controls {
+#blog_home .owl-carousel {
+    display: block;
+}
+
+.owl-carousel .VueCarousel-navigation {
     position: initial !important;
 }
 
-.owl-carousel .owl-controls .owl-buttons {
-    position: initial !important;
+.owl-theme .VueCarousel-navigation div {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    font-size: 0;
+    z-index: 1;
+    font-family: FontAwesome;
+    display: block;
+    float: left;
+    color: #fff;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    line-height: 23px;
+    text-align: center;
+    background: #ddd;
+    opacity: 1;
+    border: 1px solid #ddd;
+    border-radius: 100%;
 }
 
-.owl-carousel .owl-controls .owl-buttons div {
+.owl-carousel .VueCarousel-navigation div {
     width: 45px !important;
     height: 70px !important;
     line-height: 70px !important;
@@ -3591,42 +3611,46 @@ button:hover .line-tooltips {
     opacity: 0;
 }
 
-.owl-carousel .owl-controls .owl-buttons div:before {
+.owl-carousel .VueCarousel-navigation .VueCarousel-navigation--disabled {
+    display: none;
+}
+
+.owl-carousel .VueCarousel-navigation div:before {
     line-height: 70px !important;
     font-size: 18px;
 }
 
-.owl-carousel .owl-controls .owl-buttons div:hover {
+.owl-carousel .VueCarousel-navigation div:hover {
     background: #98ab3f !important;
     border-color: #98ab3f !important;
 }
 
-.owl-carousel .owl-controls .owl-buttons .owl-prev {
+.owl-carousel .VueCarousel-navigation .owl-prev {
     right: auto !important;
     left: 0px !important;
 }
 
-.owl-carousel .owl-controls .owl-buttons .owl-prev:before {
+.owl-carousel .VueCarousel-navigation .owl-prev:before {
     content: "\f177" !important;
 }
 
-.owl-carousel .owl-controls .owl-buttons .owl-next {
+.owl-carousel .VueCarousel-navigation .owl-next {
     left: auto !important;
     right: 0px !important;
 }
 
-.owl-carousel .owl-controls .owl-buttons .owl-next:before {
+.owl-carousel .VueCarousel-navigation .owl-next:before {
     content: "\f178" !important;
 }
 
-.owl-carousel:hover .owl-controls .owl-buttons div {
+.owl-carousel:hover .VueCarousel-navigation div {
     opacity: 1 !important;
 }
 
-.owl-carousel:hover .owl-controls .owl-buttons div.owl-prev {
+.owl-carousel:hover .VueCarousel-navigation div.owl-prev {
     left: 22.5px !important;
 }
 
-.owl-carousel:hover .owl-controls .owl-buttons div.owl-next {
+.owl-carousel:hover .VueCarousel-navigation div.owl-next {
     right: 22.5px !important;
 }

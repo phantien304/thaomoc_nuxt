@@ -8,9 +8,12 @@
                             <h3>Blog posts</h3>
                         </div>
                         <div class="row">
-                            <div class="articles-container">
-                                <el-carousel :interval="5000" arrow="always">
-                                    <el-carousel-item v-for="item in items" :key="item">
+                            <div class="owl-carousel owl-theme">
+                                <carousel :perPage="2" navigationEnabled
+                                          navigationPrevLabel="<div class='owl-prev'>prev</div>"
+                                          navigationNextLabel="<div class='owl-next'>next</div>"
+                                          :paginationEnabled="false">
+                                    <slide v-for="(item, index) in items" :key="index">
                                         <div class="row_items">
                                             <div class="articles-inner item-inner">
                                                 <div class="articles-date">
@@ -19,59 +22,29 @@
                                                 </div>
                                                 <div class="articles-content">
                                                     <div class="articles-image">
-                                                        <img :src="item.imgage" alt="#">
-                                                    </div>
+                                                        <img :src="item.src" alt="#"></div>
                                                     <div class="articles-action">
-                                                        <span class="article-author">Post by<em>{{ item.author }}</em></span>
+                                                        <span class="article-author">Post by<em>{{ item.author}}</em></span>
                                                         <a class="articles-name"
-                                                           href="http://organica4.demo.towerthemes.com/index.php?route=blog/article&amp;article_id=1">
-                                                           {{ item.title }}
+                                                           href="http://organica4.demo.towerthemes.com/index.php?route=blog/article&amp;article_id=6">
+                                                            {{ item.title}}
                                                         </a>
                                                         <div class="articles-intro">
-                                                            {{ item.content }}
+                                                            {{ item.desc}}
                                                         </div>
                                                         <div class="readmore"><a
-                                                                href="http://organica4.demo.towerthemes.com/index.php?route=blog/article&amp;article_id=1">Read
+                                                                href="http://organica4.demo.towerthemes.com/index.php?route=blog/article&amp;article_id=6">Read
                                                             more <i class="fa fa-long-arrow-right"></i></a></div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </el-carousel-item>
-                                </el-carousel>
-
-                                <div class="row_items">
-                                    <div class="articles-inner item-inner">
-                                        <div class="articles-date">
-                                            <span class="date-added">22</span>
-                                            <span class="date-added-year">Jul 2015</span>
-                                        </div>
-                                        <div class="articles-content">
-                                            <div class="articles-image"><img
-                                                    src="http://organica4.demo.towerthemes.com/image/cache/catalog/demo/img-block/blog-3-445x270.jpg"
-                                                    alt="#"></div>
-                                            <div class="articles-action">
-                                                <span class="article-author">Post by<em>towerthemes</em></span>
-                                                <a class="articles-name"
-                                                   href="http://organica4.demo.towerthemes.com/index.php?route=blog/article&amp;article_id=6">Answers
-                                                    to your Questions...</a>
-                                                <div class="articles-intro">Lorem ipsum dolor sit amet, consectetuer
-                                                    adipiscing elit, sed diam nonummy nibh euismod tincidunt. Lorem
-                                                    ipsum dolor sit amet, consectetuer...
-                                                </div>
-                                                <div class="readmore"><a
-                                                        href="http://organica4.demo.towerthemes.com/index.php?route=blog/article&amp;article_id=6">Read
-                                                    more <i class="fa fa-long-arrow-right"></i></a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
+                                    </slide>
+                                </carousel>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="newletter-subscribe newletter-home">
                     <div class="containera">
                         <div id="box" class="newletter-container">
@@ -115,7 +88,7 @@
                             </div>
                         </div>
                     </div>
-                </div><!-- /.box -->
+                </div>
                 <div id="cmsblock-21" class="cmsblock">
                     <div class="description">
                         <div class="static-block wow fadeInUp" data-wow-delay="100ms">
@@ -151,36 +124,36 @@
             return {
                 items: [
                     {
-                        'day': '22',
-                        'year': 'Jul 2015',
-                        'imgage': 'http://organica4.demo.towerthemes.com/image/cache/catalog/demo/img-block/blog-1-445x270.jpg',
-                        'author': 'Towerthemes',
-                        'title': 'Welcome to plazathemes',
-                        'content': 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer...',
+                        day: '22',
+                        year: 'Jul 2015',
+                        src: 'http://organica4.demo.towerthemes.com/image/cache/catalog/demo/img-block/blog-1-445x270.jpg',
+                        author: 'Towerthemes',
+                        title: 'Welcome to plazathemes',
+                        desc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer...',
                     },
                     {
-                        'day': '22',
-                        'year': 'Jul 2016',
-                        'imgage': 'http://organica4.demo.towerthemes.com/image/cache/catalog/demo/img-block/blog-2-445x270.jpg',
-                        'author': 'Towerthemes',
-                        'title': 'Answers to your Questions...',
-                        'content': 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer...',
+                        day: '22',
+                        year: 'Jul 2016',
+                        src: 'http://organica4.demo.towerthemes.com/image/cache/catalog/demo/img-block/blog-2-445x270.jpg',
+                        author: 'Towerthemes',
+                        title: 'Answers to your Questions...',
+                        desc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer...',
                     },
                     {
-                        'day': '22',
-                        'year': 'Jul 2014',
-                        'imgage': 'http://organica4.demo.towerthemes.com/image/cache/catalog/demo/img-block/blog-3-445x270.jpg',
-                        'author': 'Towerthemes',
-                        'title': 'Welcome to plazathemes',
-                        'content': 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer...',
+                        day: '22',
+                        year: 'Jul 2014',
+                        src: 'http://organica4.demo.towerthemes.com/image/cache/catalog/demo/img-block/blog-3-445x270.jpg',
+                        author: 'Towerthemes',
+                        title: 'Welcome to plazathemes',
+                        desc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer...',
                     },
                     {
-                        'day': '22',
-                        'year': 'Jul 2018',
-                        'imgage': 'http://organica4.demo.towerthemes.com/image/cache/catalog/demo/img-block/blog-3-445x270.jpg',
-                        'author': 'Towerthemes',
-                        'title': 'Welcome to plazathemes',
-                        'content': 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer...',
+                        day: '22',
+                        year: 'Jul 2018',
+                        src: 'http://organica4.demo.towerthemes.com/image/cache/catalog/demo/img-block/blog-3-445x270.jpg',
+                        author: 'Towerthemes',
+                        title: 'Welcome to plazathemes',
+                        desc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer...',
                     }
 
                 ]

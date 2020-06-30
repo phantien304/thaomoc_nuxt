@@ -1,3 +1,4 @@
 import Vue from 'vue';
-import carousel from 'vue-owl-carousel';
-Vue.use(carousel);
+import { Carousel, Slide } from 'vue-carousel';
+Vue.component('carousel', Carousel);
+Vue.component('slide', Slide);
