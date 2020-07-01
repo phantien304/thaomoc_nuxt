@@ -14,7 +14,6 @@ module.exports = {
         '@/assets/scss/styles.scss',
         'element-ui/lib/theme-chalk/icon.css',
         'element-ui/lib/theme-chalk/index.css',
-        'mdbvue/lib/css/mdb.min.css'
     ],
     build: {
         extractCSS: true,
