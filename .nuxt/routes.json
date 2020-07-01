@@ -1,5 +1,12 @@
 [
   {
+    "name": "category-slug",
+    "path": "/category/:slug?",
+    "component": "C:\\\\xampp\\\\htdocs\\\\thaomoc_nuxt\\\\pages\\\\category\\\\_slug\\\\index.vue",
+    "chunkName": "pages/category/_slug/index",
+    "_name": "_9db2acbe"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "C:\\\\xampp\\\\htdocs\\\\thaomoc_nuxt\\\\pages\\\\index.vue",
